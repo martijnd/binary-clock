@@ -1,21 +1,19 @@
 <template>
-  <div class="hello">
-    {{ clock }}
+  <div class="container">
+    <div class="clock">{{ clock }}</div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'BinaryClock',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App',
       clock: ''
     }
   },
   methods: {
     getTime () {
-      let bin = ''
       let number = (Date.now() / 1000).toString()
       this.clock = parseInt(number, 10).toString(2)
     }
@@ -25,3 +23,22 @@ export default {
   }
 }
 </script>
+<style>
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  .clock {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0px 20%;
+    width: 100%;
+    font-size: 3em;
+    color: saddlebrown;
+    font-weight: 700;
+    font-family: "Roboto Mono", Arial, sans-serif;
+    text-align: center;
+  }
+</style>
