@@ -33,7 +33,7 @@ export default {
   .clock {
     padding: 20px;
     background: rgba(255, 255, 255, 0.5);
-    margin: 0px 20%;
+    margin: 0 20%;
     width: 100%;
     font-size: 3em;
     color: saddlebrown;
