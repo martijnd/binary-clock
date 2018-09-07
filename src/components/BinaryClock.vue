@@ -9,7 +9,7 @@ export default {
   name: 'BinaryClock',
   data () {
     return {
-      clock: ''
+      clock: '0000000000000000000000000000000'
     }
   },
   methods: {
