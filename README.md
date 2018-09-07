@@ -1,6 +1,6 @@
 # binary-clock
 
-> Binary notation of the UNIX timestamp
+Binary notation of the UNIX timestamp
 
 ## Build Setup
 
